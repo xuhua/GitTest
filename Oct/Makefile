@@ -10,4 +10,8 @@ Oct : Oct.c
 	gcc $(CFLAGS) -o $(TARGET) $<
 clean:
 	rm -f $(TARGET) *.o
+
+run : 	${TARGET}
+	./${TARGET}
+
 .PHONY: clean
